@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Milhão</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Users/ramonlopes/Desktop/Meu Primeiro Milhão/css/style.css">
+    <link rel="shortcut icon" type="imagex/png" href="/Users/ramonlopes/Desktop/Meu Primeiro Milhão/img/MPM LOGO.ico">
+</head>
+<body>
+    <header>
+        <h1>Meu Primeiro Milhão</h1>  <link rel="shortcut ico" type="image/png" href="/Users/ramonlopes/Desktop/Meu Primeiro Milhão/img/Logo Aba.png">
+        <img src="/Users/ramonlopes/Desktop/Meu Primeiro Milhão/img/MPM LOGO.png" alt="Meu Primeiro Milhão" class="logo"> 
+        <a href="https://cloud.mail.portfel.com.br/contato?bu=Consultor&dt=Redes%20sociais&pp=Consultor&ctg=Direto&oid=005bL000003RDiaQAG&ci=005bL000003RDiaQAG" class="caixa">Fale com um Especialista</a>   <!-- Caixa de texto [div] -->
+    </header>
+    <div class="container-fluid d-flex justify-content-center flex-wrap gap-2 mt-3">
+        <button class="btn menu-btn" onclick="mostrarConteudo('livros')">Livros Recomendados</button>
+        <button class="btn menu-btn" onclick="mostrarConteudo('cdb')">CDB x LCI/LCA</button>
+        <button class="btn menu-btn" onclick="mostrarConteudo('liberdade')">Minha Liberdade Financeira</button>
+        <button class="btn menu-btn" onclick="mostrarConteudo('MPM')">Meu Primeiro Milhão</button>
+      </div>
+
+        <div id="MPM" class="conteudo ativo">
+            <div class="textContent"> 
+                <div class="calculadora">
+                    <h2>Calculadora do Meu Primeiro Milhão</h2>
+                    <input type="text" id="aporteMensal" placeholder="Aporte Mensal(R$)">
+                    <input type="text" id="patrimonioAtual" placeholder="Quanto tem acumulado hoje(R$)">
+                    <input type="number" id="rentabilidadeReal" placeholder="Rentabilidade anual estimada(%)">
+                    <button onclick="calcularPrimeiroMilhao()">Calcular</button>
+                    <p class="result" id="resultadoMilhao"></p>  
+                  </div>
+
+                </div>
+            </div>
+        <div id="livros" class="conteudo">
+        
+            <div class="textContent"> 
+                <h2>Livros recomendados pela equipe MPM</h2>
+            </div>
+            <div class="container my-4">
+                <div class="row">
+                  <div class="col-md-3 text-center">
+                    <img src="/Users/ramonlopes/Desktop/Meu Primeiro Milhão/img/OIBS.jpg" alt="O Investidor de Bom Senso" class="img-fluid mb-2">
+                    <h5 class="mb-0">O INVESTIDOR</h5>
+                    <h6>DE BOM SENSO</h6>
+                  </div>
+                  <div class="col-md-9">
+                    <p>
+                      "O Investidor de Bom Senso", de John Bogle, fundador da Vanguard, revela a estratégia simples e eficaz dos fundos de índice para obter altos retornos com baixos custos. Aclamado por nomes como Warren Buffett, o livro ensina como investir de forma inteligente, com diversificação, economia e foco no longo prazo, sendo leitura essencial para todo investidor.
+                    </p>
+                    <a href="https://www.amazon.com.br/investidor-bom-senso-John-Bogle/dp/8543110114?crid=17C3XUDA4SZXX&dib=eyJ2IjoiMSJ9.s2Nk6nKwFiIby7En9qJCTPXeP1ikJnwuVYZyDSbsWhM_EOblnuGnVDDGebWsMH8_7hoWuBH_6sNtOpgog8DkAnmg70vf4HLe-cp25a0uWOAPa_4_n47zf4xjMzk4Lg86c02-xOohU_ypGYv7_sNNl-E9jbp9T-3tCqQKjf8sZpmZyHWOFmKLjkb9XosQCsWJKSY8RcchB6wEicPj_25WDOMIF7Xfvww4KPu1qlCrV5aB3UE_WSUyiJfMNUgnD0-9-U7vODvonX2udFirc4_mzCb-R-zpYwlkUorNzQzyMcU.d37pGf1NOSwOQuz8oGZ4RCVhm1LPyYdIQcx64V3byY8&dib_tag=se&keywords=o+investidor+de+bom+senso&qid=1753321289&sprefix=o+investidor+de+%2Caps%2C286&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=ramonlopes07-20&linkId=0733e94e0eda9904c709bee3855e1469&language=pt_BR&ref_=as_li_ss_tl" class="btn btn-success mt-3">Comprar livro</a>
+                  </div>
+                </div>
+              </div>
+              <div class="container my-4">
+                <div class="row">
+                  <div class="col-md-3 text-center">
+                    <img src="/Users/ramonlopes/Desktop/Meu Primeiro Milhão/img/ENDP.jpg" alt="Em Nome do Povo" class="img-fluid mb-2">
+                    <h5 class="mb-0">EM NOME</h5>
+                    <h6>DO POVO</h6>
+                  </div>
+                  <div class="col-md-9">
+                    <p>
+                      "Em nome do Povo", de Bruno Perini, sócio do Grupo Primo e host do Podcast Os Sócios, explora como a mistura entre moeda e Estado enfraquece o valor do dinheiro ao longo do tempo. Mostra que, enquanto governos mudam, o Estado cresce e a moeda estatal perde poder de compra. Através de história, economia e política, o autor revela por que o dinheiro criado pelo Estado tende sempre a valer menos.
+                    </p>
+                    <a href="https://www.amazon.com.br/Em-Nome-Povo-Casamento-Estado/dp/6550474795?&linkCode=ll1&tag=ramonlopes07-20&linkId=35d2a7b402bb6e3c2acce839cd06c00c&language=pt_BR&ref_=as_li_ss_tl" class="btn btn-success mt-3">Comprar livro</a>
+                  </div>
+                </div>
+              </div>
+              <div class="container my-4">
+                <div class="row">
+                  <div class="col-md-3 text-center">
+                    <img src="/Users/ramonlopes/Desktop/Meu Primeiro Milhão/img/OSDMM.jpg" alt="Os Segredos da Mente Milionária" class="img-fluid mb-2">
+                    <h5 class="mb-0">Os Segredos</h5>
+                    <h6>Da Mente Milionária</h6>
+                  </div>
+                  <div class="col-md-9">
+                    <p>
+                      T. Harv Eker revela que nosso "modelo de dinheiro" – crenças formadas na infância – determina nosso destino financeiro. Ele ensina a substituir mentalidades negativas por 17 princípios dos ricos, como controlar o dinheiro, valorizar a gestão financeira e cultivar motivação positiva. O livro mostra como fazer o dinheiro trabalhar para você, com foco em poupar, investir e crescer pessoalmente, não só financeiramente.
+                    </p>
+                    <a href="https://www.amazon.com.br/segredos-mente-milion%C3%A1ria-Harv-Eker/dp/8575422391?&linkCode=ll1&tag=ramonlopes07-20&linkId=0ff21b64f0e883f96101d9266332f026&language=pt_BR&ref_=as_li_ss_tl" class="btn btn-success mt-3">Comprar livro</a>
+                  </div>
+                </div>
+              </div>
+              <div class="container my-4">
+                <div class="row">
+                  <div class="col-md-3 text-center">
+                    <img src="/Users/ramonlopes/Desktop/Meu Primeiro Milhão/img/OHMRDB.jpg" alt="O homem mais rica da Babilonia" class="img-fluid mb-2">
+                    <h5 class="mb-0">O Homem</h5>
+                    <h6>Mais Rico da Babilonia</h6>
+                  </div>
+                  <div class="col-md-9">
+                    <p>
+                      Baseando-se nos segredos de sucesso dos antigos babilônicos ― os habitantes da cidade mais rica e próspera de seu tempo ―, George S. Clason mostra soluções ao mesmo tempo sábias e muito atuais para evitar a falta de dinheiro, como não desperdiçar recursos durante tempos de opulência, buscar conhecimento e informação em vez de apenas lucro, assegurar uma renda para o futuro, manter a pontualidade no pagamento de dívidas e, sobretudo, cultivar as próprias aptidões, tornando-se cada vez mais habilidoso e consciente.
+                    </p>
+                    <a href="https://www.amazon.com.br/Homem-Mais-Rico-Babil%C3%B4nia/dp/8595081530?crid=2HSJYVZCPXLHF&dib=eyJ2IjoiMSJ9.vr3cqICSg2vvyClkSpjR6WlmDUo-vmNXF4BS5EVXeN2JEI1l0BJadApGT4KawbaV9NmfMHsXqLZ996bOLb2tOyHMrZrKR5E5H0boasIDmBZT6oRiX7xdCQLEX_yMvYoHV3lwS82ElTqzUSczIIv2SoP1K4NUJ9wBNtF1wbsyHsluFrPaFRyzwikrKXMUMlOUzwmDJ0-Zd2WhTn46Pb4za3yxM0wL3bZLrMgHDHmKJKo.lCEkLVcorokLoPN2_Y8Bu530U1Ey583sFRfu_eaSRzI&dib_tag=se&keywords=o+homem+mais+rico+da+babilonia&qid=1753323345&s=books&sprefix=o+homem%2Cstripbooks%2C244&sr=1-1&linkCode=ll1&tag=ramonlopes07-20&linkId=57f6d9ad32a851edf2220e53d43fd1f6&language=pt_BR&ref_=as_li_ss_tl" class="btn btn-success mt-3">Comprar livro</a>
+                  </div>
+                </div>
+              </div>
+              <div class="container my-4">
+                <div class="row">
+                  <div class="col-md-3 text-center">
+                    <img src="/Users/ramonlopes/Desktop/Meu Primeiro Milhão/img/APF.jpg" alt="A Psicologia Financeira" class="img-fluid mb-2">
+                    <h5 class="mb-0">A Psicologia</h5>
+                    <h6>Financeira</h6>
+                  </div>
+                  <div class="col-md-9">
+                    <p>
+                        A maneira como lidamos com o dinheiro ― finanças pessoais, investimentos, decisões de negócios ― costuma ser explicada como um campo puramente matemático, no qual dados e fórmulas nos dizem o que fazer. A verdade, porém, é que grandes decisões monetárias não são tomadas diante de uma planilha, mas durante jantares com a família e reuniões com os colegas de trabalho. Além disso, cada uma delas é um reflexo da história pessoal e das dificuldades enfrentadas pelo indivíduo que as tomou.
+                    </p>
+                    <a href="https://www.amazon.com.br/psicologia-financeira-atemporais-gan%C3%A2ncia-felicidade/dp/6555111100?crid=26LFFYC0BPE2R&dib=eyJ2IjoiMSJ9.OLtvZeTJjkNWjOXOCzDaiOAHsoKEPDEPCfdQmCRCbAOIMcTLChiDklzvNhX53rNOv0W77nwgBS0Tyqut31cOeEy6Ic5EWDkEGi0UNylIFVjf61V1zeVp88BjVTa5203CX49Ox7mFsln8MSqdbDxsobqsuoo8fHjUDXvL_7ZO2Eh-mgmJwtGIyuqzsIh0jeJmwfTjaeXh7xIHtBtkzGflKEHNqvUtB1Jao-jWvWGJkhE.1jpZHamamczlFx75R_EdjICBJ_Vg1CykTp7Vg-GefLA&dib_tag=se&keywords=psicologia+financeira&qid=1753323508&s=books&sprefix=psico%2Cstripbooks%2C293&sr=1-1&linkCode=ll1&tag=ramonlopes07-20&linkId=06bb5fc7e51dab353f14372ef5f4f3fd&language=pt_BR&ref_=as_li_ss_tl" class="btn btn-success mt-3">Comprar livro</a>
+                  </div>
+                </div>
+              </div>
+              <div class="container my-4">
+                <div class="row">
+                  <div class="col-md-3 text-center">
+                    <img src="/Users/ramonlopes/Desktop/Meu Primeiro Milhão/img/PRPP.jpg" alt="Pai Rico Pai Pobre" class="img-fluid mb-2">
+                    <h5 class="mb-0">Pai Rico</h5>
+                    <h6>Pai Pobre</h6>
+                  </div>
+                  <div class="col-md-9">
+                    <p>
+                        A escola prepara as crianças para o mundo real? Essa é a primeira pergunta com a qual o leitor se depara neste livro. O recado é ousado e direto: boa formação e notas altas não bastam para assegurar o sucesso de alguém. O mundo mudou; a maioria dos jovens tem cartão de crédito, antes mesmo de concluir os estudos, e nunca teve aula sobre dinheiro, investimentos, juros etc. Ou seja, eles vão para a escola, mas continuam financeiramente improficientes, despreparados para enfrentar um mundo que valoriza mais as despesas do que a poupança.
+                    </p>
+                    <a href="https://www.amazon.com.br/Pai-rico-pai-pobre-anos/dp/8550801488?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.ECefj_MGpJLNSKF_aVBkixQDf5t_9DXkO5jeveaIzl5TavuDiMhC5gMK1u6vT272FjTmezV3e-as_PhguPw-hZlYhmAjDNfgR8uvS2RcTwrXCU8EzcLP0kQghCkQwlrC3-OHVCycINPzOIkodLjx2TfOvMxDAxRFjdtODQL2Ob5tctjnIfFf24QGlwgwtCPaIcCUB-7_2SuJlP4MHIVwA4HpvlSB4HsM9udxZKT2T4s.MRWLxEry65-c_5YAv5ZOfNKospcJIUbVVQlwFroUQJo&qid=1753323720&sr=1-1&linkCode=ll1&tag=ramonlopes07-20&linkId=7e4c99fe6fef229e4c7d60f70017e4db&language=pt_BR&ref_=as_li_ss_tl" class="btn btn-success mt-3">Comprar livro</a>
+                  </div>
+                </div>
+              </div>
+
+        </div>
+        
+    <div id="cdb" class="conteudo">
+        <div class="textContent"> 
+            <div class="container">
+            
+                  <h1>Comparador de Investimentos: CDB vs LCI/LCA</h1>
+                </header>
+            
+                <div class="container">
+                    <div class="form-group">
+                        <label>Valor investido (R$)</label>
+                        <input type="number" id="valorInvestido" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Prazo (em dias corridos)</label>
+                        <input type="number" id="prazo" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>CDI atual (% ao ano)</label>
+                        <input type="number" id="cdi" class="form-control" value="14.90">
+                    </div>
+                    <div class="form-group">
+                        <label>CDB (% do CDI)</label>
+                        <input type="number" id="cdbPercentual" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>LCI/LCA (% do CDI)</label>
+                        <input type="number" id="lciPercentual" class="form-control">
+                    </div>
+                    <button class="btn btn-primary btn-block" onclick="compararInvestimentosCdi()">Comparar</button>
+            
+                    <div id="resultadoCdi" class="result"></div>
+                </div>
+            
+            </div>
+        </div>  
+    </div>
+        
+        <div id="liberdade" class="conteudo">
+        
+            <div class="textContent"> 
+                <div class="container">
+            
+                  <h3>Calculadora de Liberdade Financeira</h3>
+                  <input type="number" id="rendaMensal" placeholder="Quanto quero receber por mês (R$)"><br>
+                  <input type="number" id="patrimonioAtual" placeholder="Quanto já tem acumulado hoje (R$)"><br>
+                  <input type="number" id="rentabilidadeReal" placeholder="Rentabilidade real da sua carteira (% ao ano)"><br>
+                  <input type="number" id="prazoAnos" placeholder="Prazo para alcançar (anos)"><br>
+                  <button onclick="calcularLiberdadeFinanceira()">Calcular</button>
+                  <p class="result" id="resultadoLiberdade"></p>
+            
+                </div>        
+            </div>
+        </div>
+    
+    <script src="/Users/ramonlopes/Desktop/Meu Primeiro Milhão/js/script.js"></script>
+<footer>Todos os direitos reservados | Desenvolvido por Amazon Tech House ®</footer>
+</body>
+</html>
