@@ -1,0 +1,134 @@
+/* Reset  */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle, #241b8d, #070918);
+    padding-bottom: 50px; /* espaço para o rodapé não cobrir o conteúdo */
+      
+}
+
+/* Estilo do Cabeçaço */
+header {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 0px;
+    display: flex;
+    align-items: flex-start; /* Alinha tudo no início verticalmente */
+    justify-content: space-between; /* Coloca a caixa à direita */
+
+}
+.logo {
+        width: 120px;
+        height: auto;
+        margin-top: 0px; /* Ajusta a logo para ficar mais acima */
+    }
+ header h1 {
+        color: white;
+        font-size: 24px;
+        margin: 5000;
+        padding-top: 40px; /* Ajusta o título para não ficar muito colado */
+        margin-left: 50px; /* Ajusta a caixa um pouco menos à direita */
+}
+.conteudo { display: none; }
+.conteudo.ativo { display: block; }
+
+.calculadora {
+    width: 100%;
+    max-width: 500px;           /* Aumente para 500px ou 600px se quiser mais larga */
+    margin: auto;          /* Centraliza horizontalmente e dá espaço em cima/baixo */
+    padding: 30px; 
+    border-radius: 12px;
+    background-color: #4538f3;  /* Cor atual, pode ajustar se quiser */
+    color: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  }
+  .calculadora input {
+    margin-bottom: 10px;
+    border-radius: 6px;
+    padding: 10px;
+    border: none;
+  }
+input {
+    width: 80%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.caixa {
+    background-color: #1F167B; /* Cor de fundo da caixa */
+    color: #ffffff; /* Cor do texto da caixa */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    border-color: antiquewhite;
+    border-style: solid;
+    display: -moz-inline-grid; /* Faz a caixa se ajustar ao conteúdo */
+    margin-top: 40px; /* Ajuste o valor para subir ou descer a caixa */
+    margin-right: 40px; /* Ajusta a caixa um pouco menos à direita */
+}
+
+.menu-btn {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .menu-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+
+.textContent {
+    color: #ffffff; /* Cor do texto da caixa */
+    padding: 10px 20px; /* Espaçamento interno */
+    display: flex; /* Faz a caixa se ajustar ao conteúdo */
+    margin-top: 70px; /* Ajuste o valor para subir ou descer a caixa */
+    margin-left: 200px; /* Ajusta a caixa um pouco menos à direita */
+    align-items: center; /* Alinha tudo no início verticalmente */
+    justify-content: center; /* Coloca a caixa à direita */
+    max-width: 1000px; /* Define uma largura máxima para o conteúdo */
+}
+.col-md-3 h5,
+.col-md-3 h6 {
+  color: #ffffff;
+}
+.col-md-9 p {
+    color: white;
+  }
+
+.image {
+    width: 700px;
+    height: auto;
+    margin-top: 0px; /* Ajusta a logo para ficar mais acima */
+    border-radius: 25px; /*borda arredondada*/
+    margin-top: -450px; /* Ajuste o valor para subir ou descer a caixa */
+    margin-left: 700px; /* Ajusta a caixa um pouco menos à direita */
+}
+
+footer {
+/*    position: fixed; (essa parte é para fixar o rodapé na tela)*/
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #070918;
+    color: #ffffff;
+    text-align: center;
+    padding: 0px;
+    position: fixed;
+    margin-bottom: auto;
+}
